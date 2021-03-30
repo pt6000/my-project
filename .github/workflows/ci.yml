@@ -60,3 +60,12 @@ jobs:
       uses: ishworkh/docker-image-artifact-upload@v1
       with:
         image: pt6000/demo-app
+
+
+    - name: Checkout project
+      uses: actions/checkout@v2
+
+    - name: Download image
+      uses: ishworkh/docker-image-artifact-download@v1
+      with:
+        image: pt6000/demo-app
