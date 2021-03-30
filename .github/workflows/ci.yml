@@ -38,7 +38,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
          
     - name: Tar files
-      run: tar -cvf my_files.tar /path/to/my/directory
+      run: tar -cvf my_files.tar c:\
 
     - name: 'Upload Artifact'
       uses: actions/upload-artifact@v2
