@@ -74,8 +74,9 @@ jobs:
   #  - name: Tar files
   #    run: tar -cvf image.tar ${{ github.workspace }}
 
-    - name: 'Upload Artifact'
-      uses: actions/upload-artifact@v2
+    - name: 'Download Artifact'
+    #  uses: actions/upload-artifact@v2
+      uses: actions/download-artifact@v2
       with:
         name: action_image_artifact_pt6000_demo-app.zip
         path: https://github.com/pt6000/my-project/suites/*/artifacts/*
