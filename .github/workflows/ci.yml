@@ -69,4 +69,4 @@ jobs:
       uses: ishworkh/docker-image-artifact-download@v1
       with:
         image: pt6000/demo-app
-        downloads_url: https://api.github.com/repos/pt6000/my-project/downloads
+        downloads_url: pt6000/demo-app
