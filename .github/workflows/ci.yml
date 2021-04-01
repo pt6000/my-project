@@ -78,4 +78,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: "*"
-        path: ./projects/frontend/
+        path: https://github.com/pt6000/my-project/suites/2396437261/artifacts/50951179
