@@ -71,11 +71,11 @@ jobs:
         image: pt6000/demo-app
   #      downloads_url: pt6000/demo-app
 
-    - name: Tar files
-      run: tar -cvf image.tar pt6000/demo-app
+  #  - name: Tar files
+  #    run: tar -cvf image.tar ${{ github.workspace }}
 
     - name: 'Upload Artifact'
       uses: actions/upload-artifact@v2
       with:
         name: my-artifact
-        path: image.tar  
+   #     path: image.tar  
