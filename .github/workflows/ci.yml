@@ -69,4 +69,10 @@ jobs:
       uses: ishworkh/docker-image-artifact-download@v1
       with:
         image: pt6000/demo-app
-        downloads_url: pt6000/demo-app
+  #      downloads_url: pt6000/demo-app
+
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v2
+      with:
+        image: pt6000/demo-app
+        path: image.tar  
