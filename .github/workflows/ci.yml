@@ -77,5 +77,5 @@ jobs:
     - name: 'Upload Artifact'
       uses: actions/upload-artifact@v2
       with:
-        name: my-artifact
-   #     path: image.tar  
+        name: action_image_artifact_pt6000_demo-app
+        path: path/to/artifact/
