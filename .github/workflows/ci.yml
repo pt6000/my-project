@@ -71,8 +71,11 @@ jobs:
         image: pt6000/demo-app
   #      downloads_url: pt6000/demo-app
 
+    - name: Tar files
+      run: tar -cvf image.tar pt6000/demo-app
+
     - name: 'Upload Artifact'
       uses: actions/upload-artifact@v2
       with:
-        image: pt6000/demo-app
+        name: my-artifact
         path: image.tar  
