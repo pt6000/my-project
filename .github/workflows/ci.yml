@@ -76,11 +76,11 @@ jobs:
   #  - name: Tar files
   #    run: tar -cvf image.tar ${{ github.workspace }}
 
-    - name: 'Upload Artifact'
-      uses: actions/upload-artifact@v2
-      with:
-        name: '*'
-        path: https://github.com/pt6000/my-project/suites/*/artifacts/*
+  #  - name: 'Upload Artifact'
+  #    uses: actions/upload-artifact@v2
+  #    with:
+  #      name: '*'
+  #      path: https://github.com/pt6000/my-project/suites/*/artifacts/*
         
     - name: Generate certificates for next step
       uses: kofemann/action-create-certificate@v0.0.4
