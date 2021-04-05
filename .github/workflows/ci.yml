@@ -82,3 +82,13 @@ jobs:
         name: '*'
         path: https://github.com/pt6000/my-project/suites/*/artifacts/*
         
+    - name: Generate certificates for next step
+      uses: kofemann/action-create-certificate@v0.0.4
+      with:
+          hostcert: 'hostcert.pem'
+          hostkey:  'hostkey.pem'
+          cachain:  'ca-chain.pem'
+
+    - name: Use generated certificates
+      run: |
+            openssl x509 -in hostcert.pem -noout -text
