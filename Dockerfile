@@ -6,4 +6,4 @@ EXPOSE 8080
 WORKDIR /usr/app
 
 #ENTRYPOINT ["java", "-jar", "my-app-1.0-SNAPSHOT.jar"]
-export DOCKER_CONTENT_TRUST=1
+export DOCKER_CONTENT_TRUST
