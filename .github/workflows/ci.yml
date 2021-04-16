@@ -50,7 +50,7 @@ jobs:
     - run: docker trust key generate lwl11
     #  vars_prompt:
     - name: first_passphrase
-         defaults:{{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+         defaults:${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
    #  - name: second_passphrase
    #    prompt: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
   #     unsafe: yes
