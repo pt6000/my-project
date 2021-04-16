@@ -47,9 +47,9 @@ jobs:
  #     with:
  #       name: my-artifact
  #       path: my_files.tar  
-    - run: docker trust key generate lwl11 >>
+    - run: docker trust key generate lwl11 <<
        ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
-    #   ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}      
+       ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}      
 
   #  - name: first_passphrase
     # ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
