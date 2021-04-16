@@ -47,7 +47,8 @@ jobs:
  #     with:
  #       name: my-artifact
  #       path: my_files.tar  
-
+    - run: docker trust key generate lwl11 
+      
     - name: Checkout project
       uses: actions/checkout@v2
       
@@ -81,6 +82,8 @@ jobs:
   #    with:
   #      name: '*'
   #      path: https://github.com/pt6000/my-project/suites/*/artifacts/*
+  
+      
         
     - name: Generate certificates for next step
       uses: kofemann/action-create-certificate@v0.0.4
