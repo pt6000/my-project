@@ -48,9 +48,11 @@ jobs:
  #       name: my-artifact
  #       path: my_files.tar  
     - run: docker trust key generate lwl11
+       ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }} 
+       ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}      
     #  vars_prompt:
-    - name: first_passphrase
-         defaults:${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+  #  - name: first_passphrase
+    # ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
    #  - name: second_passphrase
    #    prompt: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
   #     unsafe: yes
